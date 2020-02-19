@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #a9a9a9;
+  background-color: #8db9d3;
 }
 
 body {
@@ -19,12 +19,12 @@ body {
 /* || typography */
 
 h1, h2, h3 {
-  font-family: 'Cinzel Decorative', cursive;
+  font-family: 'Comfortaa', cursive;
   color: #2a2a2a;
 }
 
 p, input, li {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Comfortaa', cursive;
   color: #2a2a2a;
 }
 
@@ -32,15 +32,19 @@ h1 {
   font-size: 4rem;
   text-align: center;
   text-shadow: 2px 2px 10px black;
+  color: black;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 3rem;
   text-align: center;
+  font-style: italic;
 }
 
 h3 {
   font-size: 2.2rem;
+  font-weight: 400;
 }
 
 p, li {
@@ -57,8 +61,9 @@ header {
 }
 
 body > * {
-  background-color: red;
+  background-color: rgb(132, 214, 132);
   padding: 1%;
+  font-family: 'Comfortaa', cursive;
 }
 
 main, header, nav, article, aside, footer, section {
@@ -84,10 +89,11 @@ nav {
 }
 
 nav ul {
-  padding: 0;
+  padding: 5;
   list-style-type: none;
   flex: 2;
   display: flex;
+  background-color: #eeeeee;
 }
 
 nav li {
