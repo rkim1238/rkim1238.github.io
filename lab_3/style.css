@@ -60,7 +60,7 @@ li {
 header {
   margin-bottom: 10px;
   display: flex;
-  flex-flow: wrap;
+  flex-flow: row wrap;
 }
 
 body > * {
