@@ -11,20 +11,23 @@ html {
 }
 
 body {
-  width: 100%;
-  margin: 0 1 auto;
-  font-family: "Noto Sans JP, sans-serif";
+  padding: 0;
+  margin: 0;
+  font-family: "Noto Sans JP, serif";
 }
 
-@media screen and (max-width: 12800px) {
-   #one { 
-    margin:0;
-    width:auto;
-  
-    border-bottom:2px;    
-  }
+@media screen and (max-width: 1000px) {
+.one{
+max-width: 100%
+}
+}
 
 /* || Typography */
+
+h1, h2 {
+margin: 0;
+padding: 0;
+}
 
 h1 {
   font-size: 2.5rem;
@@ -32,16 +35,13 @@ h1 {
   font-weight: 700;
   color: white;
   text-align: center;
-  text-shadow: 2px 2px 10px black;
+  text-shadow: -2px 2px brown;
 }
 
 h2 {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 10px;
-  margin-left: 15px;
 }
 
 /* || Header Layout */
@@ -50,7 +50,8 @@ h2 {
   background: #804020;
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  flex wrap: wrap;
+  justify-content: space-around;
   flex-direction: row;
   margin: 0;
   margin-bottom: 15px;
@@ -69,9 +70,7 @@ h2 {
   max-width: 960px;
   min-height: 100%;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: row;
+ 
   align-content: flex-start;
   margin-bottom: 150px;
   margin: 15px;
@@ -79,20 +78,20 @@ h2 {
 
 .wrapper {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  align-items: center;
   flex: 0 1 auto;
   margin: auto;
 }
 
 .one {
-  display: inline-block;
+
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  margin-right: 20px;
-  text-align: left;
-  vertical-align: top;
+  margin-right: 15px;
+  flex: 0 1 auto;
+  width: inherit;
 }
 
 .one img {
@@ -114,10 +113,12 @@ h2 {
   padding: 10px;
   width: inherit;
   border-radius: 5px;
+  flex: 0 1 auto;
+  align-items: center;
 }
 
 .two {
-  display: inline-block;
+
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -125,15 +126,10 @@ h2 {
   border-radius: 1px;
   border: dashed 2px;
   border-color: coral;
-  padding: 5px;
+  padding: 15px;
   margin-bottom: 150px;
   border-radius: 5px;
-}
-
-@media screen and (max-width: 700px) {
-.one, .two{
-max-width: 100%
-}
+  flex: 0 2 auto;
 }
 
 ol {
@@ -164,4 +160,11 @@ ol {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1rem;
   padding-bottom: 10px;
+}
+
+@media screen and (max-width:1000px) {
+.container {
+justify-content: center;
+flex-direction: column;
+}
 }
