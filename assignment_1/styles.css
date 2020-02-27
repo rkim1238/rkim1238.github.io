@@ -1,0 +1,122 @@
+/*#806C62, #FFA578, #FFD8C4, #804020, #CCAD9D*/
+/* || General  Setup */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #806c62;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: "Noto Sans JP, sans-serif"
+}
+
+/* || Typography */
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Noto Sans JP", sans-serif;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+h2 {
+font-family: "Noto Sans JP", sans-serif;
+font-weight: 800;
+  font-size: 3rem;
+text-align: center;
+}
+
+/* || Header Layout */
+
+.header {
+background: #804020;
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 15px;
+padding: 15px
+
+}
+
+.header img {
+  display: flex;
+  justify-content: space-around;
+  height: 120px;
+
+}
+
+/* || Main Layout */
+
+.one {
+display: flex;
+flex-direction: column wrap;
+flex-wrap: wrap;
+padding: 30px;
+}
+
+.one img {
+border-radius: 4px;
+border: solid 1px;
+border-color: coral;
+width: inherit;
+}
+
+.one p {
+display: flex;
+flex-wrap: wrap;
+background-color: white;
+font-family: "Noto Sans JP", sans-serif;
+font-weight: 400;
+font-size: 1rem;
+margin: 5px;
+padding: 10px;
+padding-bottom: 0px;
+}
+
+.two {
+display: flex;
+flex-wrap: wrap;
+background: white;
+border-radius: 4px;
+border: dotted 2px;
+border-color: coral;
+padding: 10px;
+}
+
+
+.jobtitle {
+font-style: italic;
+font-size: 1.5rem;
+font-family: "Noto Sans JP", Sans-serif;
+font-weight: 400;
+}
+
+.jobdesc {
+font-family: "Noto Sans JP", sans-serif;
+font-size: 1rem;
+}
+
+.duty {
+font-family: "Noto Sans JP", sans-serif;
+font-size: 1rem;
+padding-bottom: 10px;
+}
+
+.wrapper {
+display: flex;
+flex-wrap: wrap;
+}
+
+.container {
+
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
