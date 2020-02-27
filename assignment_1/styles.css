@@ -1,4 +1,4 @@
-/*#806C62, #FFA578, #FFD8C4, #804020, #CCAD9D*/
+
 /* || General  Setup */
 html,
 body {
@@ -7,116 +7,161 @@ body {
 }
 
 html {
-  background-color: #806c62;
+  background-color: #ffd8c4;
 }
 
 body {
   width: 100%;
-  margin: 0 auto;
-  font-family: "Noto Sans JP, sans-serif"
+  margin: 0 1 auto;
+  font-family: "Noto Sans JP, sans-serif";
 }
+
+@media screen and (max-width: 12800px) {
+   #one { 
+    margin:0;
+    width:auto;
+  
+    border-bottom:2px;    
+  }
 
 /* || Typography */
 
 h1 {
   font-size: 2.5rem;
   font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
   color: white;
   text-align: center;
   text-shadow: 2px 2px 10px black;
 }
 
 h2 {
-font-family: "Noto Sans JP", sans-serif;
-font-weight: 800;
-  font-size: 3rem;
-text-align: center;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 /* || Header Layout */
 
 .header {
-background: #804020;
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 15px;
-padding: 15px
-
+  background: #804020;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 15px;
 }
 
 .header img {
   display: flex;
   justify-content: space-around;
-  height: 120px;
-
+ 
 }
 
 /* || Main Layout */
 
-.one {
-display: flex;
-flex-direction: column wrap;
-flex-wrap: wrap;
-padding: 30px;
-}
-
-.one img {
-border-radius: 4px;
-border: solid 1px;
-border-color: coral;
-width: inherit;
-}
-
-.one p {
-display: flex;
-flex-wrap: wrap;
-background-color: white;
-font-family: "Noto Sans JP", sans-serif;
-font-weight: 400;
-font-size: 1rem;
-margin: 5px;
-padding: 10px;
-padding-bottom: 0px;
-}
-
-.two {
-display: flex;
-flex-wrap: wrap;
-background: white;
-border-radius: 4px;
-border: dotted 2px;
-border-color: coral;
-padding: 10px;
-}
-
-
-.jobtitle {
-font-style: italic;
-font-size: 1.5rem;
-font-family: "Noto Sans JP", Sans-serif;
-font-weight: 400;
-}
-
-.jobdesc {
-font-family: "Noto Sans JP", sans-serif;
-font-size: 1rem;
-}
-
-.duty {
-font-family: "Noto Sans JP", sans-serif;
-font-size: 1rem;
-padding-bottom: 10px;
+.container {
+  max-width: 960px;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: row;
+  align-content: flex-start;
+  margin-bottom: 150px;
+  margin: 15px;
 }
 
 .wrapper {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 0 1 auto;
+  margin: auto;
 }
 
-.container {
+.one {
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-right: 20px;
+  text-align: left;
+  vertical-align: top;
+}
 
-display: flex;
-justify-content: center;
-flex-direction: row;
+.one img {
+  width: inherit;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: coral;
+  margin-bottom: 15px;
+}
+
+.one p {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 5px;
+  padding: 10px;
+  width: inherit;
+  border-radius: 5px;
+}
+
+.two {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  background: white;
+  border-radius: 1px;
+  border: dashed 2px;
+  border-color: coral;
+  padding: 5px;
+  margin-bottom: 150px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 700px) {
+.one, .two{
+max-width: 100%
+}
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: decimal;
+  margin: 0;
+  margin-left: 20px;
+}
+
+.jobtitle {
+  font-family: "Noto Sans JP", Sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 2px;
+  letter-spacing: 0.02rem;
+}
+
+.jobdesc {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.duty {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1rem;
+  padding-bottom: 10px;
 }
