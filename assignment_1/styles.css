@@ -15,9 +15,9 @@ body {
 
 @media screen and (max-width: 1000px) {
 .one{
-max-width: 100%
-justify-content: space-evenly
-align-items: center;
+max-width: 100%;
+justify-content: space-evenly;
+
 }
 }
 
@@ -49,7 +49,7 @@ h2 {
   background: #804020;
   display: flex;
   flex wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row wrap;
   margin: 0;
   margin-bottom: 15px;
@@ -60,7 +60,7 @@ h2 {
 
 .header img {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
  
 }
 
@@ -87,39 +87,32 @@ h2 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  margin-right: 15px;
-  flex: 0 1 auto;
-  width: inherit;
 }
 
 .one img {
-  height: 200px;
-  width: 300px;
-  border-radius: 5px;
+  height: 207px;
+  width: 285px;
+  border-radius: 4px;
   border: solid 1px;
   border-color: coral;
-  margin-bottom: 15px;
+  flex: 0 1 auto;
 }
 
 .one p {
   display: flex;
   flex-wrap: wrap;
-
   background-color: white;
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 300;
+  width: 280px;
   font-size: 1rem;
-  margin: 5px;
-  padding: 10px;
-  width: inherit;
-  border-radius: 5px;
+  padding: 5px;
+  border-radius: 4px;
   flex: 0 1 auto;
   align-items: center;
 }
 
 .two {
-
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -128,7 +121,8 @@ h2 {
   border-color: coral;
   padding: 15px;
   margin-bottom: 150px;
-  border-radius: 5px;
+  margin-left: 10px;
+  border-radius: 4px;
   flex: 0 2 auto;
 }
 
@@ -165,8 +159,8 @@ ol {
 @media screen and (max-width:1000px) {
 .container {
 display: flex;
-justify-content: center;
-flex-direction: column;
+justify-content: space-evenly;
+flex-direction: row;
 flex-wrap: wrap;
 }
 }
