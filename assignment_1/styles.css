@@ -1,4 +1,3 @@
-
 /* || General  Setup */
 html,
 body {
@@ -7,25 +6,23 @@ body {
 }
 
 body {
-  padding: 0;
-  margin: 0;
-  font-family: "Noto Sans JP, serif";
   background-color: #ffd8c4;
 }
 
 @media screen and (max-width: 1000px) {
-.one{
-max-width: 100%;
-justify-content: space-evenly;
-
-}
+  .one {
+    max-width: 100%;
+    display: flex;
+    justify-content: row;
+  }
 }
 
 /* || Typography */
 
-h1, h2 {
-margin: 0;
-padding: 0;
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -33,7 +30,6 @@ h1 {
   font-family: "Noto Sans JP", sans-serif;
   font-weight: 700;
   color: white;
-  
   text-shadow: -2px 2px brown;
 }
 
@@ -49,19 +45,17 @@ h2 {
   background: #804020;
   display: flex;
   flex wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row wrap;
+  justify-content: space-around;
+  flex-direction: row;
   margin: 0;
   margin-bottom: 15px;
   padding: 15px;
   text-align: center;
-  align-items: center;
 }
 
 .header img {
   display: flex;
   justify-content: space-between;
- 
 }
 
 /* || Main Layout */
@@ -70,14 +64,16 @@ h2 {
   max-width: 960px;
   min-height: 100%;
   display: flex;
-  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
   margin-bottom: 150px;
-  margin: 15px;
 }
 
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
   flex: 0 1 auto;
   margin: auto;
@@ -85,7 +81,6 @@ h2 {
 
 .one {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
 }
 
@@ -96,23 +91,24 @@ h2 {
   border: solid 1px;
   border-color: coral;
   flex: 0 1 auto;
+  margin-right: 10px;
 }
 
 .one p {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Noto Sans JP";
   font-weight: 300;
   width: 280px;
   font-size: 1rem;
   padding: 5px;
   border-radius: 4px;
   flex: 0 1 auto;
-  align-items: center;
 }
 
 .two {
+  font-family: "Noto Sans JP";
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -121,7 +117,6 @@ h2 {
   border-color: coral;
   padding: 15px;
   margin-bottom: 150px;
-  margin-left: 10px;
   border-radius: 4px;
   flex: 0 2 auto;
 }
@@ -156,11 +151,9 @@ ol {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width:1000px) {
-.container {
-display: flex;
-justify-content: space-evenly;
-flex-direction: row;
-flex-wrap: wrap;
-}
+@media screen and (max-width: 1000px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
