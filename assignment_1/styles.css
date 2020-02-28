@@ -13,7 +13,7 @@ body {
   .one {
     max-width: 100%;
     display: flex;
-    justify-content: row;
+    flex-direction: row;
     padding: 15px;
     margin-bottom: 15px;
     justify-content: space-evenly;
@@ -47,7 +47,7 @@ h2 {
 .header {
   background: #804020;
   display: flex;
-  flex wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
   flex-direction: row;
   margin: 0;
