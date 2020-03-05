@@ -1,20 +1,53 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Lab 4</title>
-    <link src="./style.css" type="text/stylesheet" />
-</head>
-<body>
-    <div>
-        <h1 class="header">Lab 4 Header</h1>
+  <head>
+    <title>Rachel Kim's Demo Page</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="top">Prof A's Demo Page</div>
+        <button class="activate" onclick="clickMe()">
+          Click me to make a change
+        </button>
+        <div class="content">
+          <p>
+            Retro fam narwhal hoodie meggings viral bushwick yr chartreuse.
+            Chartreuse seitan banh mi selfies, woke ennui venmo craft beer. Air
+            plant tumeric retro DIY iPhone poutine. +1 gastropub chillwave,
+            cronut glossier pork belly tacos poke next level fanny pack vegan
+            jianbing lo-fi.
+          </p>
+        </div>
+        <div class="footer"></div>
+      </div>
     </div>
-    <div class="content">
-        hello world
-    </div>
+
     <script>
+
+      function clickMe() {
+
+        let name = "Rachel Kim";
+        let nlen = name.length;
+        let 
+
+
+        const content = document.querySelector(".content");
+        content.innerHTML = "Hello world";     
+      
+      const changeheader = document.querySelector(".header");
+      changeheader.innerHTML = "Rachel Kim's Lab 4";
+
+      var insertparagraph =document.createElement("div");
+      var paragraphcontent = document.createTextNode("my name has" + )
+
+
+      }
+
+
     </script>
-</body>
+  </body>
 </html>
