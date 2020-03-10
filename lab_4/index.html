@@ -1,53 +1,63 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rachel Kim's Demo Page</title>
+    <div class="add_name"><title>Prof A's Demo Page</title></div>
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
 
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="top">Prof A's Demo Page</div>
-        <button class="activate" onclick="clickMe()">
+        <div class="header">Prof A's Demo Page</div>
+        <button class="button" onclick="clickMe()">
           Click me to make a change
         </button>
         <div class="content">
-          <p>
-            Retro fam narwhal hoodie meggings viral bushwick yr chartreuse.
-            Chartreuse seitan banh mi selfies, woke ennui venmo craft beer. Air
-            plant tumeric retro DIY iPhone poutine. +1 gastropub chillwave,
-            cronut glossier pork belly tacos poke next level fanny pack vegan
-            jianbing lo-fi.
-          </p>
+          <div class="paragraph1">
+            <p>
+              Retro fam narwhal hoodie meggings viral bushwick yr chartreuse.
+              Chartreuse seitan banh mi selfies, woke ennui venmo craft beer.
+              Air plant tumeric retro DIY iPhone poutine. +1 gastropub
+              chillwave, cronut glossier pork belly tacos poke next level fanny
+              pack vegan jianbing lo-fi.
+            </p>
+          </div>
+          <div class="paragraph2"></div>
         </div>
         <div class="footer"></div>
       </div>
     </div>
 
     <script>
-
       function clickMe() {
-
         let name = "Rachel Kim";
-        let nlen = name.length;
-        let 
+        let len = name.length;
+        let char = name.CharAt(2);
+        let third = name.slice(len - 3, len);
+        let five = name.substring(0, 5);
+        let sixth = name.substring(6, 9);
+        let addLength = five.length + sixth.length;
 
+        const add_name = document.querySelector(".header");
+        add_name.innerHTML = name + "'s Lab 4" + addlength;
 
-        const content = document.querySelector(".content");
-        content.innerHTML = "Hello world";     
-      
-      const changeheader = document.querySelector(".header");
-      changeheader.innerHTML = "Rachel Kim's Lab 4";
+        const paragraph1 = document.querySelector(".paragraph1");
+        paragraph1.innerHTML =
+          "Hello World" +
+          "<br /" +
+          "My name has" +
+          len +
+          "characters." +
+          "< /br>" +
+          "< /br>";
 
-      var insertparagraph =document.createElement("div");
-      var paragraphcontent = document.createTextNode("my name has" + )
-
-
+        const paragraph2 = document.querySelector(".paragraph2");
+        parahraph2.innerHTML =
+          "The third character of my name is" +
+          third.toUpperCase() +
+          "The last three characters of my last name are" +
+          third.toLowerCase();
       }
-
-
     </script>
   </body>
 </html>
