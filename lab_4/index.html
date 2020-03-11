@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    </div><title>Rachel Kim's Demo Page</title>
+    <div class="n"><title>Rachel Kim's Demo Page</title></div>
     <link rel="stylesheet" type="text/css" href="./style.css" />
   </head>
 
   <body>
     <div class="container">
       <div class="wrapper">
-        <div class="header">Rachel Kim's Demo Page</div>
+        <div class="header">Prof A's Demo Page</div>
         <button class="button" onclick="clickMe()">
           Click me to make a change
         </button>
@@ -31,32 +31,34 @@
     <script>
       function clickMe() {
         let name = "Rachel Kim";
-        let len = name.length;
-        let char = name.CharAt(2);
-        let third = name.slice(len - 3, len);
-        let five = name.substring(0, 5);
-        let sixth = name.substring(6, 9);
-        let addLength = five.length + sixth.length;
+        let x = name.length;
+        let sec = name.charAt(2);
+        let third = name.slice(x - 3, x);
+        let fn = name.substring(0, 6);
+        let ln = name.substring(7, 10);
+        let fullname = fn.length + ln.length;
 
-        const name = document.querySelector(".header");
-        name.innerHTML = name + "'s Lab 4" + addlength;
+        const n = document.querySelector(".header");
+        n.innerHTML = name + "'s Lab 4" + fullname;
 
         const paragraph1 = document.querySelector(".paragraph1");
         paragraph1.innerHTML =
           "Hello World" +
-          "<br /" +
-          "My name has" +
-          len +
-          "characters." +
-          "< /br>" +
-          "< /br>";
+          "<br />" +
+          "<br />" +
+          "My name has " +
+          x +
+          " characters." +
+          "<br />" +
+          "<br />";
 
         const paragraph2 = document.querySelector(".paragraph2");
-        parahraph2.innerHTML =
-          "The third character of my name is" +
-          third.toUpperCase() +
-          "The last three characters of my last name are" +
+        paragraph2.innerHTML =
+          "The third character of my name is " +
+          sec.toUpperCase() +
+          ". The last three characters of my last name are " +
           third.toLowerCase();
+
       }
     </script>
   </body>
