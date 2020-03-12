@@ -92,12 +92,12 @@ h3 {
   text-shadow: 0px 1px 1px #cc9f52;
 }
 
-.activate:hover {
+.button:hover {
   background-color: coral;
   border: 2px solid rgb(216, 91, 46);
 }
 
-.activate:active {
+.button:active {
   position: relative;
   top: 1px;
 }
