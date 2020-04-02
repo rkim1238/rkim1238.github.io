@@ -42,6 +42,7 @@
         ordered.setAttribute("class", "countries");
         content.replaceChild(ordered, content.childNodes[1]);
         unselected = [...countries];
+        
         for (i = 0; i < 25; ++i) {
           var randomInt = Math.floor(Math.random() * countries.length);
           var completed = false;
