@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Forms Lab</title>
+    <title>Rachel Kim's INST377 Forms Lab</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="form_styles.css" />
   </head>
@@ -14,12 +14,13 @@
         <form action="/my-handling-form-page" method="post">
           <ul>
             <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" />
+              <label for="name">Name</label>
+              <input type="text" id="name" required
+              maxlength="140" size="10">
             </li>
             <li>
-              <label for="msg">Message:</label>
-              <textarea id="msg" name="user_message"></textarea>
+              <label for="interests">Interests</label>
+              <textarea id="interests" name="interests"></textarea>
             </li>
             <li class="button">
               <button type="submit">Send your message</button>
