@@ -73,7 +73,6 @@ h3 {
   flex: 0 0 200px;
   padding: 10px;
   overflow-wrap: break-word;
-  margin: 25px 50px;
 }
 
 .activate {
@@ -102,3 +101,14 @@ h3 {
   top: 1px;
 }
 
+.mymap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
